@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Planet Benson';
+    src: url('./planetbe.ttf') format('truetype');
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+}
+
+
+#header{
+    font-family: 'Planet Benson';
+    font-size: 2rem;
+    text-align: center;
+    background-color: beige;
+    padding: 2rem;
+}
+
+
+#main{
+    background-color: aquamarine;
+    margin-inline: auto;
+    width: min(90%, 50.5rem); 
+}
+#tabs ul {
+    list-style: none;
+    background-color: salmon;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+#tabs ul li {
+    border: 1px solid red;
+}
+
+#aboutUsContent{
+    background-color: darkgoldenrod;
+    padding: 3rem 5rem;
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+}
+#aboutUsContent> *{
+    flex: 1;
+}
+#chefImg{
+    display: block;
+    max-width: 100%;
+}
+
+#footer {
+    background-color: beige;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+}
+
