@@ -1,12 +1,41 @@
 import './styles.css'
-import chefImgURL from './chef.svg';
+
+import aboutUs from './aboutUs';
+aboutUs();
+
+const contentDiv= document.getElementById('content')
+
+//header
+const header= document.createElement('header');
+header.id= 'header';
+header.textContent = 'Abbu Non-Veg';
 
 
-//add img to the div#chefImg in the aboutUsContent div
-const aboutUsContent= document.getElementById('aboutUsContent');
-const chefImg = new Image();
-chefImg.src= chefImgURL;
-chefImg.id= 'chefImg';
-aboutUsContent.insertBefore(chefImg, aboutUsContent.firstChild)
+//nav tabs 
+const nav= document.createElement('nav');
+nav.id= 'tabs';
+nav.classList.add('centerContainer')
+const ul= document.createElement('ul');
+const li1 = document.createElement('li');
+const li2 = document.createElement('li');
+const li3 = document.createElement('li');
+li1.textContent='About Us';
+li2.textContent='Menu';
+li3.textContent='Contact';
+
+ul.append(li1,li2,li3);
+nav.appendChild(ul);
+// header.appendChild(nav)
+
+//main div
+
+const main = document.createElement('main');
+main.id='main';
+main.classList.add('centerContainer');
+
+//add aboutUs to main
+
+main.append(aboutUs())
 
 
+contentDiv.append(header, nav, main);

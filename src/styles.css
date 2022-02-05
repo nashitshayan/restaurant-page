@@ -2,11 +2,16 @@
     font-family: 'Planet Benson';
     src: url('./planetbe.ttf') format('truetype');
 }
+
+
+
 *, *::before, *::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+
 
 body{
     height: 100vh;
@@ -16,8 +21,22 @@ body{
     font-weight: 400;
   font-size: 1.3125rem;
   line-height: 1.6;
+  
 }
 
+
+
+img {
+    display: block;
+    max-width: 100%;
+  }
+
+.centerContainer {
+    margin-inline: auto;
+    width: min(90%, 50.5rem); 
+}
+
+/* Header */
 
 #header{
     font-family: 'Planet Benson';
@@ -27,12 +46,10 @@ body{
     padding: 2rem;
 }
 
-
-#main{
-    background-color: aquamarine;
-    margin-inline: auto;
-    width: min(90%, 50.5rem); 
-}
+/* nav tabs */
+/* #tabs {
+  
+} */
 #tabs ul {
     list-style: none;
     background-color: salmon;
@@ -40,23 +57,54 @@ body{
     justify-content: space-around;
     padding: 1rem;
 }
-#tabs ul li {
+
+/* #tabs ul li {
     border: 1px solid red;
+} */
+
+/* main content */
+
+#main{
+    background-color: aquamarine;
 }
 
-#aboutUsContent{
+
+
+
+
+
+/* tabContent */
+
+.tabContent{
     background-color: darkgoldenrod;
     padding: 3rem 5rem;
-    /* display: flex; */
-    /* flex-flow: row wrap; */
+    display: flex;
+    flex-direction: column;
 }
-#aboutUsContent> *{
-    flex: 1;
+
+
+.tabContent > * {
+    margin-bottom: 2em;
 }
-#chefImg{
-    display: block;
-    max-width: 100%;
-}
+
+
+
+@media (min-width: 40em) {
+   
+    .tabContent {
+        flex-direction: row;
+    }
+    .tabContent > * {
+        flex-basis: 100%;
+    }
+    .tabContent > * + *{
+        margin-left: 2em;
+    }
+  }
+
+
+
+/* footer */
 
 #footer {
     background-color: beige;
