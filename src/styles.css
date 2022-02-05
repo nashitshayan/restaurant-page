@@ -164,7 +164,10 @@ img {
     font-size: 1.2rem;
     padding: 1.5rem;
 }
-
+#footer a{
+    text-decoration: none;
+    color: brown;
+}
 
 
 @media (min-width: 40em) {
