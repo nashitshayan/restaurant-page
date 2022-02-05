@@ -2,6 +2,7 @@ import './styles.css'
 
 import aboutUs from './aboutUs';
 import menu from './menu'
+import contact from './contact';
 
 const contentDiv= document.getElementById('content')
 
@@ -33,7 +34,7 @@ nav.innerHTML= `<ul>
                     <li>Contact</li>
                 </ul>`
 
-// header.appendChild(nav)
+ //header.appendChild(nav)
 
 //main div
 
@@ -44,8 +45,8 @@ main.classList.add('centerContainer');
 //add aboutUs to main
 
 // main.append(aboutUs())
-main.append(menu());
-
+// main.append(menu());
+main.append(contact());
 
 //footer
 const footer= document.createElement('footer');
@@ -53,4 +54,4 @@ footer.id='footer';
 footer.innerHTML= `Made by <a href="https://github.com/nashitshayan" target="_blank">Nashit Shayan Khan</a>. Click <a href="https://github.com/nashitshayan/restaurant-page" target="_blank">here</a> to see the code.`
 
 
-contentDiv.append(header, nav, main,footer);
+contentDiv.append(header,nav, main,footer);

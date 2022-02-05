@@ -14,17 +14,18 @@
 
 
 body{
+   
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+#content{
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-weight: 400;
-  font-size: 1.3125rem;
-  line-height: 1.6;
-  
 }
-
-
 
 img {
     display: block;
@@ -107,7 +108,6 @@ img {
     max-width: 300px;
     display: flex;
     flex-direction: column;
-    /* margin: 1.5rem 0; */
 }
 
 .itemDetails{
@@ -129,6 +129,21 @@ img {
     margin-top: 0.5rem;
     background-color: goldenrod;
     border: 1px solid black;
+}
+
+/* contact */
+#contactDiv{
+    /* max-width: 400px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem 2rem;
+}
+#cookingImg{
+    max-width: 350px;
+    margin-bottom: 2rem;
 }
 
 
@@ -158,6 +173,9 @@ img {
 
     #menuDiv{
         flex-flow: row wrap;
+    }
+    #contactDiv{
+        padding-bottom: 6rem;
     }
 
   }
