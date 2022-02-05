@@ -15,16 +15,24 @@ header.textContent = 'Abbu Non-Veg';
 const nav= document.createElement('nav');
 nav.id= 'tabs';
 nav.classList.add('centerContainer')
-const ul= document.createElement('ul');
-const li1 = document.createElement('li');
-const li2 = document.createElement('li');
-const li3 = document.createElement('li');
-li1.textContent='About Us';
-li2.textContent='Menu';
-li3.textContent='Contact';
 
-ul.append(li1,li2,li3);
-nav.appendChild(ul);
+// const ul= document.createElement('ul');
+// const li1 = document.createElement('li');
+// const li2 = document.createElement('li');
+// const li3 = document.createElement('li');
+// li1.textContent='About Us';
+// li2.textContent='Menu';
+// li3.textContent='Contact';
+
+// ul.append(li1,li2,li3);
+// nav.appendChild(ul);
+
+nav.innerHTML= `<ul> 
+                    <li>About Us</li>
+                    <li>Menu</li>
+                    <li>Contact</li>
+                </ul>`
+
 // header.appendChild(nav)
 
 //main div
@@ -38,4 +46,10 @@ main.classList.add('centerContainer');
 main.append(aboutUs())
 
 
-contentDiv.append(header, nav, main);
+//footer
+const footer= document.createElement('footer');
+footer.id='footer';
+footer.innerHTML= `Made by <a href="https://github.com/nashitshayan" target="_blank">Nashit Shayan Khan</a>. Click <a href="https://github.com/nashitshayan/restaurant-page" target="_blank">here</a> to see the code.`
+
+
+contentDiv.append(header, nav, main,footer);
