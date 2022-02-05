@@ -29,9 +29,9 @@ nav.classList.add('centerContainer')
 // nav.appendChild(ul);
 
 nav.innerHTML= `<ul> 
-                    <li>About Us</li>
-                    <li>Menu</li>
-                    <li>Contact</li>
+                    <li id='about'>About Us</li>
+                    <li id='menu'>Menu</li>
+                    <li id='contact'>Contact</li>
                 </ul>`
 
  //header.appendChild(nav)
@@ -42,11 +42,34 @@ const main = document.createElement('main');
 main.id='main';
 main.classList.add('centerContainer');
 
-//add aboutUs to main
 
-// main.append(aboutUs())
-// main.append(menu());
-main.append(contact());
+//default is about us page
+main.append(aboutUs());
+
+//tabbing functionality;
+
+nav.addEventListener('click', (e)=>{
+    console.log(e.target.id)
+    if(e.target.id==='about')
+        {
+            main.innerHTML='';
+            main.append(aboutUs())
+        }
+    else if(e.target.id==='menu')
+        {
+            main.innerHTML='';
+            main.append(menu());
+        }
+    else if(e.target.id==='contact')
+        {
+            main.innerHTML='';
+            main.append(contact());
+        }
+})
+
+
+// 
+
 
 //footer
 const footer= document.createElement('footer');

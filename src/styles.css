@@ -59,9 +59,17 @@ img {
     padding: 1rem;
 }
 
-/* #tabs ul li {
-    border: 1px solid red;
-} */
+#tabs ul li {
+    cursor: pointer;
+    background-color: goldenrod;
+    padding: 0.25em 0.5rem;
+    border-radius: 4px;
+}
+#tabs ul li:hover {
+    background-color: rgb(247, 193, 57);
+   
+    /* padding: 0.15em 0.4rem; */
+}
 
 /* main content */
 
@@ -142,7 +150,7 @@ img {
     padding: 2rem 2rem 4rem 2rem;
 }
 #cookingImg{
-    max-width: 350px;
+    max-width: 300px;
     margin-bottom: 2rem;
 }
 
