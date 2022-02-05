@@ -1,7 +1,7 @@
 import './styles.css'
 
 import aboutUs from './aboutUs';
-aboutUs();
+import menu from './menu'
 
 const contentDiv= document.getElementById('content')
 
@@ -43,7 +43,8 @@ main.classList.add('centerContainer');
 
 //add aboutUs to main
 
-main.append(aboutUs())
+// main.append(aboutUs())
+main.append(menu());
 
 
 //footer
