@@ -4,7 +4,10 @@ import aboutUs from './aboutUs';
 import menu from './menu'
 import contact from './contact';
 
-const contentDiv= document.getElementById('content')
+
+const contentDiv= document.createElement('div');
+contentDiv.id='content';
+document.body.appendChild(contentDiv);
 
 //header
 const header= document.createElement('header');
