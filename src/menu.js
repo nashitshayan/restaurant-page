@@ -1,4 +1,10 @@
-import biryaniImgURL from './biryani.jpg';
+import biryaniImgURL from './chickenBiryani.jpg';
+import chickenTikkaURL from './chickenTikka.jpeg';
+import butterChickenURL from './butterChicken.jpeg';
+import fishFryURL from './fishFry.jpeg';
+import fishCurryURL from './fishCurry.jpeg';
+import eggCurryURL from './eggCurry.jpg';
+
 
 export default function menu(){
     const menuDiv= document.createElement('div');
@@ -13,27 +19,27 @@ export default function menu(){
         {
             name: 'Chicken Tikka',
             price: '180 Rs.',
-            url: biryaniImgURL,
+            url: chickenTikkaURL,
         },
         {
             name: 'Butter Chicken',
             price: '250 Rs.',
-            url: biryaniImgURL,
+            url: butterChickenURL,
         },
         {
             name: 'Fish Fry',
             price: '180 Rs.',
-            url: biryaniImgURL,
+            url: fishFryURL,
         },
         {
             name: 'Fish Curry',
             price: '250 Rs.',
-            url: biryaniImgURL,
+            url: fishCurryURL,
         },
         {
             name: 'Egg Curry',
             price: '150 Rs.',
-            url: biryaniImgURL,
+            url: eggCurryURL,
         },
         
     ]
@@ -45,6 +51,8 @@ export default function menu(){
         let itemImg = new Image();
         itemImg.src= menuItem.url;
         itemImg.id= `${menuItem.name}`;
+        itemImg.style.width= '250px';
+        itemImg.style.height= '250px';
         imgDiv.appendChild(itemImg);
         menuCard.append(imgDiv);
 
