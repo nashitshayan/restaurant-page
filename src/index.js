@@ -32,7 +32,7 @@ nav.classList.add('centerContainer')
 // nav.appendChild(ul);
 
 nav.innerHTML= `<ul> 
-                    <li id='about' class='tabItem'>About Us</li>
+                    <li id='about' class='tabItem active'>About Us</li>
                     <li id='menu' class='tabItem'>Menu</li>
                     <li id='contact' class='tabItem'>Contact</li>
                 </ul>`
