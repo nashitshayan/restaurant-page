@@ -41,11 +41,10 @@ export default function menu(){
             price: '150 Rs.',
             url: eggCurryURL,
         },
-        
     ]
 
-    // menuDiv.innerHTML=`
-    // <h3>Menu Items</h3`
+  
+    //create a menu card for each dish
 
     menutItemList.forEach(menuItem=>{
         let menuCard = document.createElement('div');
@@ -72,17 +71,5 @@ export default function menu(){
         menuDiv.append(menuCard);
     })
 
-   
-
-    
-
-    // let name= 'Chicken Biryani';
-    // let price = 250;
-   
-   
-    //const itemDetails = document.createElement('div');
-
-    
-
-    return menuDiv;
+ return menuDiv;
 }

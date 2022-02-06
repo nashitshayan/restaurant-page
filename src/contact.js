@@ -19,7 +19,6 @@ export default function contact(){
     <div>Address: ABC Colony, XYZ Road, City - (xxx-xxx)</div>
     </div>
     `
-
-
-    return contactDiv;
+    
+return contactDiv;
 }

@@ -1,10 +1,8 @@
 import chefImgURL from './chef.svg';
 
-
 export default function aboutUs(){
     
     //aboutUs div
-    
     const aboutUsContent= document.createElement('div');
     aboutUsContent.id ='aboutUsContent';
     aboutUsContent.classList.add('tabContent');
@@ -17,6 +15,7 @@ export default function aboutUs(){
     chefImg.id= 'chefImg';
     imgDiv.appendChild(chefImg);
     
+
     //about Chef Div
     const aboutChef = document.createElement('div');
     aboutChef.id='aboutChef';
@@ -31,13 +30,10 @@ export default function aboutUs(){
             <h2>Our Vision</h2>
             <p>We believe in spreading warmth and happiness through our services. Currently we're a small business run by a family, but we work hard and wish to expand our business to serve more people.</p>
         </div>
-        
-        
-        
     `
 
     //add imgDiv and aboutChef div to aboutUsContent div
     aboutUsContent.append(imgDiv, aboutChef);
 
-    return aboutUsContent;
+  return aboutUsContent;
 }
