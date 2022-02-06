@@ -20,7 +20,21 @@ export default function aboutUs(){
     //about Chef Div
     const aboutChef = document.createElement('div');
     aboutChef.id='aboutChef';
-    aboutChef.textContent= 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste cumque veritatis maiores repellendus quod saepe nulla alias eius, inventore ullam. Quae, temporibus deleniti. Temporibus totam autem placeat perspiciatis! Fugit inventore numquam voluptatibus quos molestiae perferendis quis rerum accusantium totam consequuntur!';
+    aboutChef.innerHTML= `
+        <div>
+            <h2>Our Story</h2>
+            <p>Based locally in City, we serve fresh home-cooked halal food.  Special care is taken to make sure all ingredients are fresh.</p>
+
+        </div>
+        
+        <div>
+            <h2>Our Vision</h2>
+            <p>We believe in spreading warmth and happiness through our services. Currently we're a small business run by a family, but we work hard and wish to expand our business to serve more people.</p>
+        </div>
+        
+        
+        
+    `
 
     //add imgDiv and aboutChef div to aboutUsContent div
     aboutUsContent.append(imgDiv, aboutChef);

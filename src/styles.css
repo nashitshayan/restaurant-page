@@ -4,6 +4,15 @@
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+:root{
+    --clr-primary: #2b2d42;
+    --clr-secondary: #8d99ae;
+    --clr-accent: #ffd166;
+    --clr-neutral: #edf2f4;
+}
+
 
 *, *::before, *::after{
     box-sizing: border-box;
@@ -11,13 +20,33 @@
     padding: 0;
 }
 
+/* util classes */
+
+/* .clr-primary{
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral);
+}
+.clr-secondary{
+    background-color: var(--clr-secondary);
+    color: var(--clr-neutral);
+}
+.clr-accent{
+    background-color: var(--clr-accent);
+    color: var(--clr-neutral);
+}
+.clr-neutral{
+    background-color: var(--clr-neutral);
+    color: var(--clr-primary);
+} */
+
 
 
 body{
-   
-    font-weight: 400;
+   font-weight: 400;
     font-size: 1.3125rem;
     line-height: 1.6;
+    color: var(--clr-neutral);
+    font-family: 'Open Sans', sans-serif;;
 }
 
 #content{
@@ -43,8 +72,10 @@ img {
     font-family: 'Planet Benson';
     font-size: 2rem;
     text-align: center;
-    background-color: beige;
     padding: 2rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-accent);
+    
 }
 
 /* nav tabs */
@@ -53,28 +84,34 @@ img {
 } */
 #tabs ul {
     list-style: none;
-    background-color: salmon;
+    background-color: var(--clr-accent);
     display: flex;
     justify-content: space-around;
     padding: 1rem;
+    border-bottom: 3px solid var(--clr-primary);
 }
 
-#tabs ul li {
+.tabItem {
     cursor: pointer;
-    background-color: goldenrod;
-    padding: 0.25em 0.5rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral);
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
     border-radius: 4px;
 }
-#tabs ul li:hover {
-    background-color: rgb(247, 193, 57);
+#tabs ul li:hover , .active{
+    background-color: var(--clr-accent);
+    color: var(--clr-primary);
+    border: 2px solid var(--clr-primary);
+    padding: 14px 30px;
    
-    /* padding: 0.15em 0.4rem; */
 }
 
 /* main content */
 
 #main{
-    background-color: aquamarine;
+    background-color: var(--clr-accent);
+    color: var(--clr-primary);
 }
 
 
@@ -85,10 +122,10 @@ img {
 /* tabContent */
 
 .tabContent{
-    background-color: darkgoldenrod;
-    padding: 3rem 5rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
+   align-items: center;
 }
 
 
@@ -96,7 +133,11 @@ img {
     margin-bottom: 2em;
 }
 
+/* about us */
 
+#aboutChef > *{
+    margin-bottom: 1.5rem;
+}
 
 
 
@@ -111,8 +152,10 @@ img {
 }
 
 .menuCard{
-    border: 5px solid darkgoldenrod;
-    background-color: lightgoldenrodyellow;
+    border: 3px solid var(--clr-primary);
+    border-radius: 4px;
+    background-color: var(--clr-neutral);
+    color: var(--clr-primary);
     max-width: 300px;
     display: flex;
     flex-direction: column;
@@ -130,13 +173,19 @@ img {
     width: 50px;
     font-size: 1.1rem;
     padding: 0.25rem;
+    cursor: pointer;
 }
 
 #addToCart{
     padding: 0.75rem;
     margin-top: 0.5rem;
-    background-color: goldenrod;
-    border: 1px solid black;
+    background-color: var(--clr-accent);
+    border: 1px solid var(--clr-primary);
+    border-radius: 4px;
+}
+#addToCart:hover{
+    background-color: #fac039;
+    cursor: pointer;
 }
 
 /* contact */
@@ -146,12 +195,23 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin: 0 auto;
     padding: 2rem 2rem 4rem 2rem;
 }
-#cookingImg{
+#cookingImg, #chefImg{
     max-width: 300px;
     margin-bottom: 2rem;
+}
+#contactInfo{
+    margin-top: 0.5rem;
+    max-width: 370px;
+    padding: 1rem;
+    text-align: center;
+    border: 3px solid var(--clr-primary);
+    border-radius: 4px;
+    font-weight: bold;
+
 }
 
 
@@ -159,21 +219,22 @@ img {
 /* footer */
 
 #footer {
-    background-color: beige;
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral);
     text-align: center;
     font-size: 1.2rem;
     padding: 1.5rem;
 }
 #footer a{
     text-decoration: none;
-    color: brown;
+    color: var(--clr-accent)
 }
 
 
 @media (min-width: 40em) {
-   
-    .tabContent {
-        flex-direction: row;
+    
+    .tabContent{
+        padding: 3rem 5rem;
     }
     .tabContent > * {
         flex-basis: 100%;
@@ -197,4 +258,27 @@ img {
         left: 0;
         width: 100%;
     }
+  }
+
+  @media(max-width: 500px){
+    #tabs ul {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+    #tabs ul li {
+        width: 10rem;
+        margin-inline: auto;
+    }
+    
+   
+    #contactDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 2rem 2rem 4rem 2rem;
+    }
+    
   }

@@ -44,6 +44,9 @@ export default function menu(){
         
     ]
 
+    // menuDiv.innerHTML=`
+    // <h3>Menu Items</h3`
+
     menutItemList.forEach(menuItem=>{
         let menuCard = document.createElement('div');
         menuCard.classList.add('menuCard');
@@ -58,9 +61,9 @@ export default function menu(){
 
          menuCard.innerHTML+= `
          <div class= 'itemDetails'>
-            <div>${menuItem.name}</div>
-            <div>Price : ${menuItem.price}Rs.</div>
-            <div>Qty : <input type="number" name="qty" id="qty" value='1'></div>
+            <div><strong>${menuItem.name}</strong></div>
+            <div>Price : <strong>${menuItem.price}</strong></div>
+            <div>Qty : <input type="number" name="qty" id="qty" value='0'></div>
             <button id='addToCart'>Add To Cart</button>
          </div>    
          `

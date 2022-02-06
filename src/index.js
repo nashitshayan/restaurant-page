@@ -32,9 +32,9 @@ nav.classList.add('centerContainer')
 // nav.appendChild(ul);
 
 nav.innerHTML= `<ul> 
-                    <li id='about'>About Us</li>
-                    <li id='menu'>Menu</li>
-                    <li id='contact'>Contact</li>
+                    <li id='about' class='tabItem'>About Us</li>
+                    <li id='menu' class='tabItem'>Menu</li>
+                    <li id='contact' class='tabItem'>Contact</li>
                 </ul>`
 
  //header.appendChild(nav)
@@ -52,19 +52,29 @@ main.append(aboutUs());
 //tabbing functionality;
 
 nav.addEventListener('click', (e)=>{
-    console.log(e.target.id)
+    console.log()
+    //remove active class from each menu item, later add only that which is clicked
+    let tabItemArr= Array.from(e.target.parentElement.children);
+    tabItemArr.forEach(menuItem=> menuItem.classList.remove('active'));
+    // e.target.parentElement.children.forEach(menuItem=> menuItem.classList.remove('active'));
+
+    
+
     if(e.target.id==='about')
-        {
+        {   
+            e.target.classList.add('active');
             main.innerHTML='';
             main.append(aboutUs())
         }
     else if(e.target.id==='menu')
-        {
+        {   
+            e.target.classList.add('active');
             main.innerHTML='';
             main.append(menu());
         }
     else if(e.target.id==='contact')
-        {
+        {   
+            e.target.classList.add('active');
             main.innerHTML='';
             main.append(contact());
         }

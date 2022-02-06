@@ -13,9 +13,11 @@ export default function contact(){
     contactDiv.append(imgDiv)
     contactDiv.innerHTML+= `
     <h3>For Mass Orders & Other Queries</h3>
+    <div id='contactInfo'>
     <div>Phone: xxx-xxx-xxxx</div>
     <div>Email: owner@abbunonveg.com</div>
     <div>Address: ABC Colony, XYZ Road, City - (xxx-xxx)</div>
+    </div>
     `
 
 
