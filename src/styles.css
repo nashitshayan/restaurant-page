@@ -21,7 +21,7 @@ body{
 }
 
 #content{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -189,4 +189,12 @@ img {
         padding-bottom: 6rem;
     }
 
+  }
+  @media (min-height: 750px){
+    #footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
   }
