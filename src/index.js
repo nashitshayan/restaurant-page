@@ -1,4 +1,4 @@
 import './css/styles.css'
-import content from './components/content';
+import loadContent from './components/content';
 
-document.body.appendChild(content());
+document.body.appendChild(loadContent());
