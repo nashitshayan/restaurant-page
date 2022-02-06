@@ -1,4 +1,4 @@
-import cookingImgURL from './cooking.svg';
+import cookingImgURL from '../images/cooking.svg';
 
 export default function contact(){
     const contactDiv = document.createElement('div');

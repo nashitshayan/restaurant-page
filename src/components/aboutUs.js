@@ -1,4 +1,4 @@
-import chefImgURL from './chef.svg';
+import chefImgURL from '../images/chef.svg';
 
 export default function aboutUs(){
     

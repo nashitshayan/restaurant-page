@@ -1,9 +1,9 @@
-import biryaniImgURL from './chickenBiryani.jpg';
-import chickenTikkaURL from './chickenTikka.jpeg';
-import butterChickenURL from './butterChicken.jpeg';
-import fishFryURL from './fishFry.jpeg';
-import fishCurryURL from './fishCurry.jpeg';
-import eggCurryURL from './eggCurry.jpg';
+import biryaniImgURL from '../images/chickenBiryani.jpg';
+import chickenTikkaURL from '../images/chickenTikka.jpeg';
+import butterChickenURL from '../images/butterChicken.jpeg';
+import fishFryURL from '../images/fishFry.jpeg';
+import fishCurryURL from '../images/fishCurry.jpeg';
+import eggCurryURL from '../images/eggCurry.jpg';
 
 
 export default function menu(){

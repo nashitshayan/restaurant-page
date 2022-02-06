@@ -1,7 +1,7 @@
-import './styles.css'
-import aboutUs from './aboutUs';
-import menu from './menu'
-import contact from './contact';
+import './css/styles.css'
+import aboutUs from './components/aboutUs';
+import menu from './components/menu'
+import contact from './components/contact';
 
 
 const contentDiv= document.createElement('div');
