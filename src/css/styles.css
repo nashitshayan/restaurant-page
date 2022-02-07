@@ -7,9 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 :root{
-    --clr-primary: #2b2d42;
-    --clr-secondary: #8d99ae;
-    --clr-accent: #ffd166;
+    --clr-primary: #ffd166;
+    --clr-secondary: #2b2d42;
     --clr-neutral: #edf2f4;
 }
 
@@ -28,6 +27,7 @@ body{
     font-weight: 400;
     font-size: 1.3125rem;
     line-height: 1.6;
+    /* background-color: var(--clr-primary); */
 }
 
 
@@ -57,8 +57,8 @@ img {
 /* Header */
 
 #header{
-    background-color: var(--clr-primary);
-    color: var(--clr-accent);
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary);
     font-family: 'Planet Benson';
     font-size: 2rem;
     padding: 2rem;
@@ -68,8 +68,8 @@ img {
 
 
 #tabs ul {
-    background-color: var(--clr-accent);
-    border-bottom: 3px solid var(--clr-primary);
+    background-color: var(--clr-primary);
+    border-bottom: 3px solid var(--clr-secondary);
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -79,7 +79,7 @@ img {
 
 .tabItem {
     
-    background-color: var(--clr-primary);
+    background-color: var(--clr-secondary);
     border-radius: 4px;
     color: var(--clr-neutral);
     cursor: pointer;
@@ -89,9 +89,9 @@ img {
 
 
 #tabs ul li:hover , .active {
-    background-color: var(--clr-accent);
-    color: var(--clr-primary);
-    border: 2px solid var(--clr-primary);
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+    border: 2px solid var(--clr-secondary);
     padding: 14px 30px;
 }
 
@@ -101,8 +101,8 @@ img {
 /* main content */
 
 #main{
-    background-color: var(--clr-accent);
-    color: var(--clr-primary);
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
 }
 
 
@@ -146,9 +146,9 @@ img {
 
 .menuCard{
     background-color: var(--clr-neutral);
-    border: 3px solid var(--clr-primary);
+    border: 3px solid var(--clr-secondary);
     border-radius: 4px;
-    color: var(--clr-primary);
+    color: var(--clr-secondary);
     display: flex;
     flex-direction: column;
     max-width: 300px;
@@ -176,8 +176,8 @@ img {
 
 
 #addToCart{
-    background-color: var(--clr-accent);
-    border: 1px solid var(--clr-primary);
+    background-color: var(--clr-primary);
+    border: 1px solid var(--clr-secondary);
     border-radius: 4px;
     margin-top: 0.5rem;
     padding: 0.75rem;
@@ -211,7 +211,7 @@ img {
 
 
 #contactInfo{
-    border: 3px solid var(--clr-primary);
+    border: 3px solid var(--clr-secondary);
     border-radius: 4px;
     font-weight: bold;
     margin-top: 0.5rem;
@@ -225,7 +225,7 @@ img {
 /* footer */
 
 #footer {
-    background-color: var(--clr-primary);
+    background-color: var(--clr-secondary);
     color: var(--clr-neutral);
     font-size: 1.2rem;
     padding: 1.5rem;
@@ -234,7 +234,7 @@ img {
 
 
 #footer a{
-    color: var(--clr-accent);
+    color: var(--clr-primary);
     text-decoration: none;
 }
 
